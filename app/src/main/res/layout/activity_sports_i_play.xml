@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/bg_all_screens"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/signup_sports_i_play" />
+
+        <ListView
+            android:id="@+id/graidView_myProfile_sportsIPlay"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_margin="10dp"
+            android:divider="@drawable/gray_tab"
+
+            android:dividerHeight="1dp"
+            android:nestedScrollingEnabled="true"
+            android:numColumns="3" />
+
+        <Button
+            android:id="@+id/button_myProfile_save"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg_blue"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="#7AC3D1" />
+
+    </LinearLayout>
+
+</LinearLayout>

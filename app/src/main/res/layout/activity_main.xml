@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.mawaqaa.playermatch.Activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Et_toolbar"
+        style="Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@drawable/underline_bg"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/Et_relLayTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_toolBar_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/menu_icon2x"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/imageView_toolBar_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/big_logo2x"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/imageView_toolBar_logo"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView_toolBar_calender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:padding="3dp"
+                    app:srcCompat="@drawable/calender_2x" />
+
+                <TextView
+                    android:id="@+id/textView_toolBar_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4"
+                    android:gravity="top|center"
+                    android:text="ع"
+                    android:textAllCaps="true"
+                    android:textColor="#7AC3D1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/Et_toolbar"
+        android:layout_weight="0.86"
+        android:background="@android:color/transparent">
+
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/bg_all_screens"
+            android:fitsSystemWindows="true">
+
+        </android.support.design.widget.NavigationView>
+
+        <!--
+                <LinearLayout
+                    android:id="@+id/linLayDrawerList"
+                    android:layout_width="250dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ListView
+                        android:id="@+id/drawer_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:choiceMode="singleChoice"
+                        android:listSelector="#7AC3D1">
+
+                    </ListView>
+                </LinearLayout>
+        -->
+    </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="0.07"
+        android:background="@drawable/scr12x"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_weight="0.00"
+            app:srcCompat="@drawable/instagram2x" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Game On</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDlv5b7hvkdm9Wotvm_gDXoKyU8EWyL0tU
+    </string>
+    <string name="google_places_api_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyD-LJFZ7sdx3ZsX6zoS6EN9i06GJq8hQBE
+    </string>
+    <!--App global Strings-->
+    <string name="alert_dialog_are_you_sure_msg">Are you sure you want to exit?</string>
+    <string name="alert_dialog_are_you_sure_msg_yes">Yes</string>
+    <string name="alert_dialog_are_you_sure_msg_no">No</string>
+
+
+    <!--Splash Activity-->
+    <string name="splash_text">FIND. CONNECT. PLAY.</string>
+
+    <!--Drawer Items-->
+
+    <string name="drawer_sign_in_up">Sign In / Sign Up</string>
+    <string name="drawer_profile">My Profile</string>
+    <string name="drawer_about_us">About Us</string>
+    <string name="drawer_faqs">FAQs</string>
+    <string name="drawer_contact_us">Contact Us</string>
+    <string name="drawer_log_out">Sign Out</string>
+    <string name="drawer_sign_in">Sign In</string>
+
+    <string name="drawer_share_app">Share App</string>
+
+    <!--Home Fragment-->
+    <string name="home_football">Football</string>
+    <string name="home_basketball">Volleyball</string>
+    <string name="home_volleyball">Basketball</string>
+
+
+    <!--sign in/up Fragment-->
+    <string name="signin_up_username">E-mail ID </string>
+    <string name="signin_up_pass">Password</string>
+    <string name="signin_up_signin_button">Sign In</string>
+    <string name="signin_up_signin_forger_pass">Forgot password?</string>
+
+
+    <string name="signin_up_do_you_have_account">Don\'t have an account?</string>
+    <string name="signin_up_signup">Sign Up</string>
+    <string name="signin_up_continue_as_guist">Continue as a Guest</string>
+
+    <string name="signin_up_pass_empty">Please enter password!</string>
+    <string name="signin_up_username_empty">Please enter E-mail ID!</string>
+    <string name="signin_up_valid">Please enter valid E-mail ID!</string>
+
+
+    <!--sForget Password Fragment-->
+    <string name="forget_password_enter_email">Enter your Email</string>
+    <string name="forget_password_btn_send">Submit</string>
+    <string name="forget_password_empty">Please enter your email!</string>
+
+
+    <!--signup Fragment-->
+    <string name="signup_title">Sign Up</string>
+    <string name="signup_name">Name</string>
+    <string name="signup_username">Username</string>
+
+    <string name="signup_phone">Phone</string>
+    <string name="signup_phone_profile">Phone number</string>
+
+    <string name="signup_male">    Male</string>
+    <string name="signup_femail">    Female</string>
+    <string name="signup_age_renge">Age Range</string>
+    <string name="signup_age_renge2">Age Range: </string>
+
+    <string name="signup_sports_i_play">Sports I Play</string>
+    <string name="signup_nationality">Nationality</string>
+    <string name="signup_email_id">E-mail ID </string>
+
+    <string name="signup_email_id_hint">E-mail ID (This will be your username)</string>
+    <string name="signup_pass">Password</string>
+    <string name="signup_confirm_pass">Re-type Password</string>
+    <string name="signup_btn_save">Register</string>
+
+    <string name="signup_error_username_empty">Name is missing</string>
+
+    <string name="signup_error_phone_empty">Phone is missing</string>
+    <string name="signup_error_email_empty">Email is missing</string>
+    <string name="signup_error_password_empty">Password is missing</string>
+    <string name="signup_error_password_confirm_empty">Password confirm is missing</string>
+    <string name="signup_error_password_confirm_empty2">Password confirm does not match password</string>
+
+    <string name="signup_error_nationality_empty">Nationality is missing</string>
+    <string name="signup_error_sports_empty">Please select sports you play!</string>
+
+
+    <!--Calendar/Games Fragment-->
+    <string name="games_day_to_go">days to go</string>
+    <string name="games_created">Games Created</string>
+    <string name="games_joined">Games Joined</string>
+    <string name="games_pending">Games Pending</string>
+
+
+    <!--GameDetails Fragment-->
+    <string name="game_details_organizer_name">Organizer name: </string>
+    <string name="game_details_date">Date: </string>
+    <string name="game_details_time">Time: </string>
+    <string name="game_details_location">Location: </string>
+    <string name="game_details_gender">Gender: </string>
+    <string name="game_details_age_range">Age Range: </string>
+    <string name="game_details_players_acquired">Players Acquired: </string>
+    <string name="game_details_players_required">Players Required: </string>
+    <string name="game_details_text_game">Game</string>
+    <string name="game_details_text_location">Location</string>
+
+    <!--My Profile Fragment-->
+    <string name="my_profile_name">Name</string>
+    <string name="my_profile_position_played">Position Played</string>
+    <string name="my_profile_age_range">Age</string>
+    <string name="my_profile_nationality">Nationality</string>
+    <string name="my_profile_sports_i_play">Sports I Play</string>
+
+    <!--About Us Fragment-->
+    <string name="about_us_title">About Us</string>
+
+    <!--FQA Fragment-->
+    <string name="fqa_title">FAQs</string>
+
+    <!--Notification   Fragment-->
+    <string name="notification_button_accept">Accept</string>
+    <string name="notification_button_decline">Decline</string>
+    <string name="notification_button_title">Notifications</string>
+    <string name="notification_button_pay">Pay Now</string>
+
+
+    <!--ListOFGames Fragment-->
+    <string name="list_of_games_button">Join Game</string>
+
+    <!--ListOFIndividuals Fragment-->
+    <string name="list_of_individuals_button">Invite Player</string>
+
+    <!--CreateGameFragment Fragment-->
+    <string name="create_game_title">Create a Game</string>
+    <string name="create_game_welcome">Welcome</string>
+    <string name="create_select_title">Title</string>
+
+    <string name="create_select_date">Select Date</string>
+    <string name="create_select_date_hint">Date</string>
+    <string name="create_select_time_hint">Time</string>
+
+    <string name="create_select_time">Select Time</string>
+
+    <string name="create_schedule">Schedule</string>
+    <string name="create_location">Location</string>
+    <string name="create_players_required">Players Required</string>
+    <string name="create_players_total">Total # of Players</string>
+    <string name="create_gender">Gender</string>
+    <string name="create_gender_non">Co-ed</string>
+    <string name="create_btn">Create</string>
+    <string name="create_age_range">Age Range</string>
+
+
+    <!--Select Location Activity-->
+
+    <string name="select_location_save">Save Location</string>
+    <string name="select_location_cancel">Cancel</string>
+    <string name="home">Home</string>
+    <string name="event">Schedule</string>
+    <string name="notification">Notifications</string>
+
+    <!--Filter  -->
+    <string name="filter_date">Date</string>
+    <string name="filter_time">Time</string>
+    <string name="filter_gender">Gender</string>
+    <string name="filter_position">Position</string>
+    <string name="filter_btn_find">Find</string>
+    <string name="filter_btn_clear">Clear</string>
+    <string name="select_match">Select Match</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_noti">There are no notifications</string>
+    <string name="i_want_to_play">I want to play</string>
+    <string name="play">Play</string>
+
+
+</resources>

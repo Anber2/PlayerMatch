@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_all_screens"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/signup_title"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:text="Name"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editText_signUp_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:ems="10"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textViewss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:text="Phone number"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editText_signUp_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:ems="10"
+                        android:hint="phone number "
+                        android:inputType="phone"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewssass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.3"
+                        android:text="@string/create_gender"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup_SignUp_Gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_selector"
+                            android:scaleX="0.5"
+                            android:scaleY="0.5"
+                             android:textSize="30dp"
+                            android:text="  Male"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_femail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:button="@drawable/radio_button_selector"
+                             android:scaleX="0.5"
+                            android:scaleY="0.5"
+                             android:textSize="30dp"
+                            android:text="  Female" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_coEd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:button="@drawable/radio_button_selector"
+                            android:padding="5dp"
+                            android:text="@string/create_gender_non"
+                            android:visibility="invisible" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Age"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editText_signUp_ageRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                         android:hint=" Age"
+                        android:inputType="number"
+                        android:textSize="14dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_ageRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_sports_i_play"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+
+                    <EditText
+                        android:id="@+id/editText_signUp_sportsIPlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:hint=" "
+                        android:enabled="false"
+                        android:textSize="12dp"
+                        android:inputType="phone"
+                        android:nestedScrollingEnabled="true" />
+
+                    <TextView
+                        android:id="@+id/textView_signUp_addSport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:text="Add Sports"
+                        android:textColor="#7AC3D1" />
+
+                    <GridView
+                        android:id="@+id/graidView_sportsIPlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:nestedScrollingEnabled="true"
+
+                        android:numColumns="3"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_nationality"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_nationality"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textViewsss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:text="@string/signup_email_id"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editText_signUp_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:ems="10"
+                        android:hint="@string/signup_email_id_hint"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textViewd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:text="@string/signup_pass"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editText_signUp_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:ems="10"
+                        android:hint="@string/signup_pass"
+                        android:inputType="textPassword"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView4ss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:text="@string/signup_confirm_pass"
+
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editText_signUp_confirmPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:ems="10"
+                        android:hint="@string/signup_confirm_pass"
+                        android:inputType="textPassword"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_singup_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_bg_blue"
+                        android:text="@string/signup_btn_save"
+                        android:textAllCaps="false"
+                        android:textColor="#7AC3D1" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
